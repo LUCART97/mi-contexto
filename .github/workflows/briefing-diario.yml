@@ -1,0 +1,54 @@
+name: Briefing diario
+
+on:
+  schedule:
+    - cron: "0 11 * * 1-6"   # 7am Caracas (UTC-4), lunes a sábado
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  briefing:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
+            Lee leads.csv en la raíz de este repo (usa .claude/agents/analista-leads.md
+            y prompts/ como contexto de negocio) y sobrescribe briefing.md con este
+            formato exacto:
+
+            # Briefing IA Vertyx — {fecha de hoy}
+
+            ## 📊 Leads por canal (activos, sin cerrar/perdido)
+            - Canal: cantidad
+
+            ## 🔴 Contactar ya (nuevos, cero respuesta)
+            - lead — canal — empresa — por qué urge — acción sugerida
+
+            ## 🟠 Calientes, riesgo de perderlos hoy
+            - lead — canal — % probabilidad — por qué está en riesgo
+
+            ## 🟡 Seguimientos de hoy o mañana
+            - lead — canal — fecha de seguimiento — qué preparar
+
+            ## 🟢 Sin urgencia
+            - lead — canal — próxima fecha relevante
+
+            ## 🎯 Prioridad #1 de hoy
+            una sola acción concreta
+
+            No inventes datos que no estén en leads.csv. Si falta información, dilo.
+          claude_args: "--max-turns 15 --allowedTools Read,Write,Edit"
+
+      - name: Commit briefing
+        run: |
+          git config user.name "IA Vertyx Bot"
+          git config user.email "bot@iavertyx.local"
+          git add briefing.md
+          git diff --quiet --cached || git commit -m "Briefing diario $(date +%F)"
+          git push
