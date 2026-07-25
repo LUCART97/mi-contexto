@@ -45,12 +45,14 @@ jobs:
 
             No inventes datos que no estén en leads.csv. Si falta información, dilo.
           claude_args: "--max-turns 15 --allowedTools Read,Write,Edit"
-          show_full_output: true
 
       - name: Commit briefing
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "IA Vertyx Bot"
           git config user.email "bot@iavertyx.local"
+          git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git"
           git add briefing.md
           git diff --quiet --cached || git commit -m "Briefing diario $(date +%F)"
           git push
