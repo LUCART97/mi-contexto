@@ -18,3 +18,6 @@
 
 ## Qué quiero lograr en el curso
 - Además de ser creador de agentes de IA y bots de WhatsApp, construir una empresa tecnológica que agilice muchos procesos
+
+## Pendiente a automatizar
+- Tarea manual de punta a punta: copiar información desde Google (Docs/Drive) y pegarla a mano en WhatsApp para compartirla con un grupo. Cruza Google + WhatsApp — candidato a automatizar con un agente que lea el documento y lo envíe directo al grupo.
