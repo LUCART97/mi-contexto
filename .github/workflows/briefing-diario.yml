@@ -45,6 +45,7 @@ jobs:
 
             No inventes datos que no estén en leads.csv. Si falta información, dilo.
           claude_args: "--max-turns 15 --allowedTools Read,Write,Edit"
+          show_full_output: true
 
       - name: Commit briefing
         run: |
