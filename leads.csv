@@ -1,0 +1,11 @@
+ID,Fecha,Nombre,Empresa,Cargo,Ciudad,Telefono,Email,Fuente,Servicio de interes,Estado,Prioridad,Ultimo contacto,Proximo seguimiento,Responsable,Presupuesto,Probabilidad,Observaciones
+001,24/07/2026,Juan Pérez,Restaurante ABC,Dueño,Panamá,+50760001111,juan@email.com,Instagram,Bot WhatsApp IA,Nuevo,Alta,,25/07/2026,Cesar,Por definir,40%,Quiere automatizar reservas y atención al cliente.
+002,24/07/2026,María Gómez,Clínica Salud,Gerente,Caracas,+584121234567,maria@email.com,Referido,Agente IA,Contactado,Alta,24/07/2026,26/07/2026,Cesar,Medio,60%,Solicitó una demostración.
+003,24/07/2026,Carlos Ruiz,Tienda Online CR,CEO,CDMX,+525512345678,carlos@email.com,Página web,Automatización de ventas,Reunión agendada,Alta,24/07/2026,28/07/2026,Cesar,Alto,80%,Reunión programada por Google Meet.
+004,24/07/2026,Ana López,Inmobiliaria XYZ,Directora,Boston,+16175551234,ana@email.com,Facebook,IA para ventas,Propuesta enviada,Media,24/07/2026,30/07/2026,Cesar,Alto,90%,Esperando aprobación.
+005,24/07/2026,Pedro Díaz,Ferretería Díaz,Propietario,Panamá,+50765554444,pedro@email.com,WhatsApp,Chatbot IA,Cerrado ganado,Alta,24/07/2026,,Cesar,Alto,100%,Cliente activo.
+006,24/07/2026,Laura Fernández,Beauty Studio,Dueña,CDMX,+525544443333,laura@email.com,Instagram,Página web + IA,Nuevo,Media,,27/07/2026,Cesar,Medio,35%,Quiere captar más citas.
+007,24/07/2026,José Martínez,Legal Solutions,Abogado,Caracas,+584141112233,jose@email.com,LinkedIn,Bot de consultas,Conversación activa,Alta,24/07/2026,25/07/2026,Cesar,Alto,70%,Busca automatizar consultas legales.
+008,24/07/2026,Andrea Castillo,Academia Plus,Directora,Panamá,+50768889999,andrea@email.com,TikTok,Embudo de ventas,Contactado,Media,24/07/2026,29/07/2026,Cesar,Medio,55%,Interesada en captar alumnos.
+009,24/07/2026,Miguel Herrera,Auto Parts,Propietario,Boston,+16178887777,miguel@email.com,Google,Automatización WhatsApp,Nuevo,Alta,,26/07/2026,Cesar,Alto,45%,Recibe más de 100 consultas diarias.
+010,24/07/2026,Sofía Ramírez,Hotel Costa,Gerente,Panamá,+50769998888,sofia@email.com,Página web,Asistente IA,Negociación,Alta,24/07/2026,26/07/2026,Cesar,Alto,85%,Está comparando propuestas.
