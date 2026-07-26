@@ -20,6 +20,9 @@ jobs:
         env:
           MEM0_API_KEY: ${{ secrets.MEM0_API_KEY }}
           MEM0_EXTRACTOR_SINCE: "1 day ago"
+          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
+          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+          GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
         run: |
           chmod +x scripts/mem0-extractor.sh
           ./scripts/mem0-extractor.sh
