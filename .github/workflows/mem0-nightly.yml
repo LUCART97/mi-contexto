@@ -1,0 +1,25 @@
+name: Mem0 nightly extractor
+
+on:
+  schedule:
+    - cron: "13 7 * * *"   # 3:13am Caracas (UTC-4)
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run mem0 extractor
+        env:
+          MEM0_API_KEY: ${{ secrets.MEM0_API_KEY }}
+          MEM0_EXTRACTOR_SINCE: "1 day ago"
+        run: |
+          chmod +x scripts/mem0-extractor.sh
+          ./scripts/mem0-extractor.sh
