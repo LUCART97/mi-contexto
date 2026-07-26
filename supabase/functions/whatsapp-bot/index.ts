@@ -69,6 +69,18 @@ async function askClaude(userMessage: string, memoryContext: string): Promise<st
   return data.choices?.[0]?.message?.content ?? "Disculpa, no pude generar una respuesta. Intenta de nuevo.";
 }
 
+const HANDOFF_TRIGGERS = ["precio", "agendar", "no entiendo"];
+
+function maybeHandoff(userId: string, message: string): boolean {
+  const lower = message.toLowerCase();
+  const trigger = HANDOFF_TRIGGERS.find((t) => lower.includes(t));
+  if (trigger) {
+    console.log(`[handoff] tag=needs-human trigger="${trigger}" from=${userId} message="${message}"`);
+    return true;
+  }
+  return false;
+}
+
 Deno.serve(async (req) => {
   if (req.method !== "POST") {
     return new Response("Method not allowed", { status: 405 });
@@ -81,6 +93,8 @@ Deno.serve(async (req) => {
   if (!body) {
     return twimlResponse("Hola, soy el asistente de IA Vertyx. Cuéntame en qué te puedo ayudar.");
   }
+
+  maybeHandoff(from, body);
 
   const memoryContext = await getUserMemories(from, body);
   const reply = await askClaude(body, memoryContext);
