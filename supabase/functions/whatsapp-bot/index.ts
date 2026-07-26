@@ -1,7 +1,7 @@
 // Bot de WhatsApp de IA Vertyx: Twilio -> esta función -> Claude (+ contexto de Mem0) -> TwiML.
 import "@supabase/functions-js/edge-runtime.d.ts";
 
-const ANTHROPIC_API_KEY = Deno.env.get("ANTHROPIC_API_KEY")!;
+const MISTRAL_API_KEY = Deno.env.get("MISTRAL_API_KEY")!;
 const MEM0_API_KEY = Deno.env.get("MEM0_API_KEY")!;
 
 const SYSTEM_PROMPT = `Eres el asistente de WhatsApp de IA Vertyx, la empresa de Cesar Lucart
@@ -44,25 +44,27 @@ async function getUserMemories(userId: string, query: string): Promise<string> {
 }
 
 async function askClaude(userMessage: string, memoryContext: string): Promise<string> {
-  const res = await fetch("https://api.anthropic.com/v1/messages", {
+  const system = memoryContext ? `${SYSTEM_PROMPT}\n\n${memoryContext}` : SYSTEM_PROMPT;
+  const res = await fetch("https://api.mistral.ai/v1/chat/completions", {
     method: "POST",
     headers: {
-      "x-api-key": ANTHROPIC_API_KEY,
-      "anthropic-version": "2023-06-01",
+      "Authorization": `Bearer ${MISTRAL_API_KEY}`,
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      model: "claude-sonnet-5",
+      model: "mistral-small-latest",
       max_tokens: 500,
-      system: memoryContext ? `${SYSTEM_PROMPT}\n\n${memoryContext}` : SYSTEM_PROMPT,
-      messages: [{ role: "user", content: userMessage }],
+      messages: [
+        { role: "system", content: system },
+        { role: "user", content: userMessage },
+      ],
     }),
   });
   if (!res.ok) {
     return "Disculpa, tuve un problema técnico respondiendo. Intenta de nuevo en un momento.";
   }
   const data = await res.json();
-  return data.content?.[0]?.text ?? "Disculpa, no pude generar una respuesta. Intenta de nuevo.";
+  return data.choices?.[0]?.message?.content ?? "Disculpa, no pude generar una respuesta. Intenta de nuevo.";
 }
 
 Deno.serve(async (req) => {
