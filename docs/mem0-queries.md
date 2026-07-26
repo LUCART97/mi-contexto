@@ -31,3 +31,13 @@ Resultado real (top hits): aprobación del quiz de S04, un correo sobre bots de 
 
 **Query 5 — "¿Hubo algún fallo reciente en mis workflows o agentes de cron?"**
 Resultado real: encontró el correo de GitHub "[LUCART97/mi-contexto] Run failed: Briefing diario - master (97ae19c)" — el mismo fallo de autenticación que corregimos en S03/S04.
+
+---
+
+## Revisión del grafo (13 memorias acumuladas)
+
+**Nodo más conectado: "mi-contexto"** (el proyecto/repo de IA Vertyx). Casi todas las memorias — commits del repo, la conexión de Mem0 al `.mcp.json`, el cron nocturno del extractor, el merge a `master`, la tabla `leads` en Supabase, y hasta los correos de GitHub sobre el workflow que falló — giran alrededor de este mismo proyecto. Es el centro natural del grafo: todo lo que Cesar construye en la Academia (agentes, cron, Mem0, Supabase) vive y se conecta desde `mi-contexto`.
+
+**Otras conexiones notables:**
+- Los correos de Gmail (GitHub, Supabase, Academia Catalizadora) conectan el negocio con las notificaciones automáticas de sus propias herramientas — un ciclo donde las herramientas que construyó le avisan de sí mismas.
+- El fallo del "Briefing diario" (commit `97ae19c`) conecta tres memorias distintas (el correo, el commit, y el cron) — señal de que ese incidente quedó bien registrado como aprendizaje.
