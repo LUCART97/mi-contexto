@@ -1,6 +1,6 @@
 # Demo · OpenClaw de IA Vertyx
 
-**Video (8 min):** [pendiente — pega aquí el link una vez grabado]
+**Video (8 min):** https://drive.google.com/file/d/1aUsR2P0B91_70Gv7ym0Jv4CLU48PXGwK/view?usp=drive_link
 
 ## Guion (8 minutos)
 
