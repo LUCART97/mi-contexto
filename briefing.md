@@ -1,4 +1,4 @@
-# Briefing IA Vertyx — 2026-08-13
+# Briefing IA Vertyx — 2026-08-14
 
 ## 📊 Leads por canal (activos, sin cerrar/perdido)
 - Instagram: 2
@@ -12,23 +12,23 @@
 (Se excluyó del conteo a Pedro Díaz / Ferretería Díaz, estado "Cerrado ganado". No hay leads en estado "perdido" en la tabla.)
 
 ## 🔴 Contactar ya (nuevos, cero respuesta)
-- Juan Pérez — Instagram — Restaurante ABC — estado "Nuevo", sin `ultimo_contacto` registrado, seguimiento vencido desde el 25/07 (19 días) — contactarlo hoy sobre el Bot WhatsApp IA para reservas y atención al cliente.
-- Miguel Herrera — Google — Auto Parts — estado "Nuevo", sin `ultimo_contacto` registrado, seguimiento vencido desde el 26/07 (18 días); observaciones indican que recibe más de 100 consultas diarias, así que cada día sin responder es alto costo de oportunidad — contactarlo hoy sobre automatización de WhatsApp.
-- Laura Fernández — Instagram — Beauty Studio — estado "Nuevo", sin `ultimo_contacto` registrado, seguimiento vencido desde el 27/07 (17 días) — contactarla hoy sobre página web + IA para captar más citas.
+- Juan Pérez — Instagram — Restaurante ABC — estado "Nuevo", sin `ultimo_contacto` registrado, seguimiento vencido desde el 25/07 (20 días) — contactarlo hoy sobre el Bot WhatsApp IA para reservas y atención al cliente.
+- Miguel Herrera — Google — Auto Parts — estado "Nuevo", sin `ultimo_contacto` registrado, seguimiento vencido desde el 26/07 (19 días); observaciones indican que recibe más de 100 consultas diarias, así que cada día sin responder es alto costo de oportunidad — contactarlo hoy sobre automatización de WhatsApp.
+- Laura Fernández — Instagram — Beauty Studio — estado "Nuevo", sin `ultimo_contacto` registrado, seguimiento vencido desde el 27/07 (18 días) — contactarla hoy sobre página web + IA para captar más citas.
 
 ## 🟠 Calientes, riesgo de perderlos hoy
-- Ana López — Facebook — 90% probabilidad — propuesta enviada, "esperando aprobación", sin contacto nuevo desde el 24/07, seguimiento vencido desde el 30/07 (14 días) — es la probabilidad más alta del pipeline activo; si la decisión final se enfría por falta de refuerzo, es la pérdida de mayor costo.
-- Sofía Ramírez — Página web — 85% probabilidad — en negociación, observación indica que "está comparando propuestas" de la competencia, seguimiento vencido desde el 26/07 (18 días) — riesgo real de perderla ante otro proveedor si no se refuerza hoy.
-- Carlos Ruiz — Página web — 80% probabilidad — reunión agendada por Google Meet, sin registro de qué pasó después, seguimiento vencido desde el 28/07 (16 días) — confirmar hoy el resultado de la reunión o retomar contacto.
-- José Martínez — LinkedIn — 70% probabilidad — "conversación activa", es el seguimiento más vencido de todos junto con Juan Pérez (desde el 25/07, 19 días) — retomar antes de que se enfríe del todo.
+- Ana López — Facebook — 90% probabilidad — propuesta enviada, "esperando aprobación", sin contacto nuevo desde el 24/07, seguimiento vencido desde el 30/07 (15 días) — es la probabilidad más alta del pipeline activo; si la decisión final se enfría por falta de refuerzo, es la pérdida de mayor costo.
+- Sofía Ramírez — Página web — 85% probabilidad — en negociación, observación indica que "está comparando propuestas" de la competencia, seguimiento vencido desde el 26/07 (19 días) — riesgo real de perderla ante otro proveedor si no se refuerza hoy.
+- Carlos Ruiz — Página web — 80% probabilidad — reunión agendada por Google Meet, sin registro de qué pasó después, seguimiento vencido desde el 28/07 (17 días) — confirmar hoy el resultado de la reunión o retomar contacto.
+- José Martínez — LinkedIn — 70% probabilidad — "conversación activa", es el seguimiento más vencido de todos junto con Juan Pérez (desde el 25/07, 20 días) — retomar antes de que se enfríe del todo.
 
 ## 🟡 Seguimientos de hoy o mañana
-Ningún lead activo tiene `proximo_seguimiento` registrado exactamente para hoy (13/08) o mañana (14/08): todas las fechas de seguimiento de la tabla ya vencieron, entre 14 y 19 días. Los dos que no entraron en las categorías anteriores:
-- María Gómez — Referido — Clínica Salud — seguimiento vencido desde el 26/07 (18 días) — preparar la agenda de la demo que solicitó.
-- Andrea Castillo — TikTok — Academia Plus — seguimiento vencido desde el 29/07 (15 días) — preparar propuesta de embudo de ventas.
+Ningún lead activo tiene `proximo_seguimiento` registrado exactamente para hoy (14/08) o mañana (15/08): todas las fechas de seguimiento de la tabla ya vencieron, entre 15 y 20 días. Los dos que no entraron en las categorías anteriores:
+- María Gómez — Referido — Clínica Salud — seguimiento vencido desde el 26/07 (19 días) — preparar la agenda de la demo que solicitó.
+- Andrea Castillo — TikTok — Academia Plus — seguimiento vencido desde el 29/07 (16 días) — preparar propuesta de embudo de ventas.
 
 ## 🟢 Sin urgencia
 Ninguno: los 9 leads activos tienen seguimiento vencido o nunca fueron contactados; no hay ningún lead con una próxima fecha relevante a futuro registrada en la tabla.
 
 ## 🎯 Prioridad #1 de hoy
-Retomar hoy a Ana López (Inmobiliaria XYZ, Facebook): tiene la probabilidad más alta del pipeline activo (90%), presupuesto alto y una propuesta enviada "esperando aprobación" sin ningún refuerzo desde hace 14 días — es el lead más cerca de cerrar y el que más se pierde por dejarlo enfriar.
+Retomar hoy a Ana López (Inmobiliaria XYZ, Facebook): tiene la probabilidad más alta del pipeline activo (90%), presupuesto alto y una propuesta enviada "esperando aprobación" sin ningún refuerzo desde hace 15 días — es el lead más cerca de cerrar y el que más se pierde por dejarlo enfriar.
